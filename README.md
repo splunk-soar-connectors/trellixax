@@ -6,7 +6,7 @@ Connector Version: 1\.0\.1
 Product Vendor: Trellix  
 Product Name: Advanced Malware Analysis  
 Product Version Supported (regex): "\.\*"  
-Minimum Product Version: 4\.9\.39220  
+Minimum Product Version: 5\.3\.2\.88192  
 
 Previously FireEyeAx.
 This app provides connectivity to the Trellix Advanced Malware Analysis tool.
