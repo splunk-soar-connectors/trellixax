@@ -243,4 +243,4 @@ No parameters are required for this action
 ### Action Output
 DATA PATH | TYPE | CONTAINS
 --------- | ---- | --------
-action\_result\.data\.\*\.entity\.sensors\.\*\.profiles\.\*\.name
+action\_result\.data\.\*\.entity\.sensors\.\*\.profiles\.\*\.name | string | 
