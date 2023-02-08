@@ -234,7 +234,7 @@ summary\.total\_objects | numeric |
 summary\.total\_objects\_successful | numeric |
 
 ## action: 'get profiles'
-Type: **generic**
+Type: **generic**  
 Read only: **True**
   
 ### Action Parameters
