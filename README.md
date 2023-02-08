@@ -52,7 +52,7 @@ VARIABLE | REQUIRED | TYPE | DESCRIPTION
 [detonate url](#action-detonate-url) - Run a URL in the sandbox  
 [get report](#action-get-report) - Get results of an already completed detonation  
 [save artifacts](#action-save-artifacts) - Save a ZIP file of the detonation report to the Vault  
-[get status](#action-get-status) - Gets the status of a detonation report
+[get status](#action-get-status) - Gets the status of a detonation report  
 [get profiles](#action-get-profiles) - Gets the avaliable analysis profiles
 
 ## action: 'test connectivity'
@@ -234,6 +234,7 @@ summary\.total\_objects | numeric |
 summary\.total\_objects\_successful | numeric |
 
 ## action: 'get profiles'
+Type: **generic**
 Read only: **True**
   
 ### Action Parameters
