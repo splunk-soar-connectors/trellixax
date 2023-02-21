@@ -2,7 +2,7 @@
 # Trellix Malware Analysis
 
 Publisher: Splunk Community  
-Connector Version: 1\.0\.1  
+Connector Version: 1\.0\.2  
 Product Vendor: Trellix  
 Product Name: Malware Analysis  
 Product Version Supported (regex): "\.\*"  
@@ -106,7 +106,7 @@ Detonate a file in the AX console\.
 #### Action Parameters
 PARAMETER | REQUIRED | DESCRIPTION | TYPE | CONTAINS
 --------- | -------- | ----------- | ---- | --------
-**vault\_id** |  required  | Vault ID of the file to detonate | string |  `pe file`  `pdf`  `flash`  `apk`  `jar`  `doc`  `xls`  `ppt` 
+**vault\_id** |  required  | Vault ID of the file to detonate | string |  `pe file`  `pdf`  `flash`  `apk`  `jar`  `doc`  `xls`  `ppt`  `vault id` 
 **priority** |  required  | Sets the analysis priority, default is Normal | string | 
 **analysis\_type** |  required  | Specifies the analysis mode | string | 
 **force** |  optional  | Perform an analysis on the file even if the file exactly matches an analysis that has already been performed on this file | boolean | 
@@ -120,7 +120,7 @@ PARAMETER | REQUIRED | DESCRIPTION | TYPE | CONTAINS
 #### Action Output
 DATA PATH | TYPE | CONTAINS | EXAMPLE VALUES
 --------- | ---- | -------- | --------------
-action\_result\.parameter\.vault\_id | string |  `pe file`  `pdf`  `flash`  `apk`  `jar`  `doc`  `xls`  `ppt`  |  
+action\_result\.parameter\.vault\_id | string |  `pe file`  `pdf`  `flash`  `apk`  `jar`  `doc`  `xls`  `ppt`  `vault id`  |  
 action\_result\.parameter\.priority | string |  |  
 action\_result\.parameter\.analysis\_type | string |  |  
 action\_result\.parameter\.force | boolean |  |   True  False 
