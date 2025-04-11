@@ -1,7 +1,7 @@
 # Trellix Malware Analysis
 
 Publisher: Splunk Community \
-Connector Version: 1.0.2 \
+Connector Version: 1.0.3 \
 Product Vendor: Trellix \
 Product Name: Malware Analysis \
 Minimum Product Version: 5.4.0
