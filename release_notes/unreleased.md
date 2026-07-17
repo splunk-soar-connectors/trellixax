@@ -1,1 +1,4 @@
 **Unreleased**
+
+* Verify Trellix Malware Analysis server certificates by default.
+* Safely encode report and status identifiers in API paths.
