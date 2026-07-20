@@ -1,9 +1,9 @@
 # Trellix Malware Analysis
 
-Publisher: Splunk Community \
-Connector Version: 1.0.3 \
-Product Vendor: Trellix \
-Product Name: Malware Analysis \
+Publisher: Splunk Community <br>
+Connector Version: 1.0.3 <br>
+Product Vendor: Trellix <br>
+Product Name: Malware Analysis <br>
 Minimum Product Version: 5.4.0
 
 This app provides connectivity to the Trellix Advanced Malware Analysis tool
@@ -17,22 +17,23 @@ VARIABLE | REQUIRED | TYPE | DESCRIPTION
 **base_url** | required | string | Base URL for the console, i.e., https://<console IP or FQDN> |
 **username** | required | string | Username to log into the console |
 **password** | required | password | Password for the username |
+**verify_server_cert** | optional | boolean | Verify server certificate |
 
 ### Supported Actions
 
-[test connectivity](#action-test-connectivity) - Validate the asset configuration for connectivity using supplied configuration \
-[get profiles](#action-get-profiles) - Return available operating system profiles from Trellix console \
-[detonate file](#action-detonate-file) - Run a file in the sandbox and retrieve the analysis results \
-[detonate url](#action-detonate-url) - Run a URL in the sandbox \
-[get report](#action-get-report) - Get results of an already completed detonation \
-[save artifacts](#action-save-artifacts) - Save a ZIP file of the detonation report to the Vault \
+[test connectivity](#action-test-connectivity) - Validate the asset configuration for connectivity using supplied configuration <br>
+[get profiles](#action-get-profiles) - Return available operating system profiles from Trellix console <br>
+[detonate file](#action-detonate-file) - Run a file in the sandbox and retrieve the analysis results <br>
+[detonate url](#action-detonate-url) - Run a URL in the sandbox <br>
+[get report](#action-get-report) - Get results of an already completed detonation <br>
+[save artifacts](#action-save-artifacts) - Save a ZIP file of the detonation report to the Vault <br>
 [get status](#action-get-status) - Gets the status of a detonation report
 
 ## action: 'test connectivity'
 
 Validate the asset configuration for connectivity using supplied configuration
 
-Type: **test** \
+Type: **test** <br>
 Read only: **True**
 
 #### Action Parameters
@@ -47,7 +48,7 @@ No Output
 
 Return available operating system profiles from Trellix console
 
-Type: **generic** \
+Type: **generic** <br>
 Read only: **False**
 
 #### Action Parameters
@@ -69,7 +70,7 @@ summary.total_objects_successful | numeric | | 1 |
 
 Run a file in the sandbox and retrieve the analysis results
 
-Type: **generic** \
+Type: **generic** <br>
 Read only: **False**
 
 Detonate a file in the AX console.
@@ -117,7 +118,7 @@ summary.total_objects_successful | numeric | | 1 |
 
 Run a URL in the sandbox
 
-Type: **generic** \
+Type: **generic** <br>
 Read only: **False**
 
 Detonate a URL in the AX console.
@@ -166,7 +167,7 @@ summary.total_objects_successful | numeric | | |
 
 Get results of an already completed detonation
 
-Type: **investigate** \
+Type: **investigate** <br>
 Read only: **True**
 
 #### Action Parameters
@@ -199,7 +200,7 @@ action_result.data.\*.alert.\*.explanation.malwareDetected.malware.1.original | 
 
 Save a ZIP file of the detonation report to the Vault
 
-Type: **investigate** \
+Type: **investigate** <br>
 Read only: **True**
 
 This action downloads all the malware artifacts from a detonation as a ZIP file and adds that file to the vault.
@@ -226,7 +227,7 @@ summary.total_objects_successful | numeric | | 1 |
 
 Gets the status of a detonation report
 
-Type: **investigate** \
+Type: **investigate** <br>
 Read only: **True**
 
 #### Action Parameters
@@ -257,7 +258,7 @@ ______________________________________________________________________
 
 Auto-generated Splunk SOAR Connector documentation.
 
-Copyright 2025 Splunk Inc.
+Copyright 2026 Splunk Inc.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
